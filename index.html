@@ -77,10 +77,22 @@
             margin-bottom: 8px;
         }
         
+        ol {
+            margin: 10px 0 10px 40px;
+        }
+        
         .highlight {
             background: #f7fafc;
             padding: 15px;
             border-left: 4px solid #4299e1;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning {
+            background: #fff5f5;
+            padding: 15px;
+            border-left: 4px solid #f56565;
             margin: 20px 0;
             border-radius: 4px;
         }
@@ -148,7 +160,6 @@
         <p><strong>Mishkat Al-Hoda Islamic App</strong></p>
         <div class="app-info">
             <p>Last updated: December 10, 2025</p>
-            <p>Package Name: com.example.meshkat_elhoda</p>
         </div>
     </div>
     
@@ -169,7 +180,27 @@
             <strong>Guest Mode:</strong> You can use the app without registration. In guest mode, your data is stored locally on your device only and is not synced to our servers.
         </div>
         
-        <h3>1.2 Location Data</h3>
+        <h3>1.2 Types of Data Collected</h3>
+        <p>We collect the following categories of personal data:</p>
+        <ul>
+            <li><strong>Personal Identification Data:</strong> Name, email address (for registered accounts only)</li>
+            <li><strong>Location Data:</strong> GPS coordinates, city, country (for prayer times and Qibla direction)</li>
+            <li><strong>Usage Data:</strong> App interactions, feature usage, session duration, crash reports</li>
+            <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers</li>
+            <li><strong>Progress Data:</strong> Quran reading progress, prayer tracking, bookmarked verses</li>
+            <li><strong>Preference Data:</strong> App settings, theme preferences, notification preferences</li>
+        </ul>
+        
+        <h3>1.3 How We Collect Data</h3>
+        <p>Data is collected through:</p>
+        <ul>
+            <li><strong>Direct User Input:</strong> Information you provide when creating an account or using features</li>
+            <li><strong>Automated Collection:</strong> Usage analytics and crash reports through Firebase Analytics</li>
+            <li><strong>Device Sensors:</strong> Location data from GPS (with user permission)</li>
+            <li><strong>Third-Party Services:</strong> Authentication via Google Sign-In (optional)</li>
+        </ul>
+        
+        <h3>1.4 Location Data</h3>
         <p>The App requests location permissions to provide:</p>
         <ul>
             <li>Accurate prayer times for your location</li>
@@ -178,7 +209,7 @@
         </ul>
         <p>Location data is used only when the relevant features are enabled.</p>
         
-        <h3>1.3 Usage Data</h3>
+        <h3>1.5 Usage Data</h3>
         <p>We collect anonymous usage data to:</p>
         <ul>
             <li>Improve app performance and stability</li>
@@ -252,6 +283,21 @@
             <li>App functionality and updates</li>
             <li>Google Maps API for Qibla direction and mosque locations</li>
             <li>Secure authentication (if using Google Sign-In)</li>
+            <li>Firebase Analytics for anonymous usage data</li>
+        </ul>
+        
+        <div class="highlight">
+            <strong>Google Maps API Key:</strong> AIzaSyDmgxQIRDwTzrU6ph702YXadBPLSzv2pnc<br>
+            This is used solely for map display and location services.
+        </div>
+        
+        <h3>4.3 Analytics Services</h3>
+        <p>We use Firebase Analytics to collect anonymous usage data. This data helps us:</p>
+        <ul>
+            <li>Understand how users interact with the app</li>
+            <li>Identify and fix crashes</li>
+            <li>Improve app performance</li>
+            <li>Make informed decisions about feature development</li>
         </ul>
         
         <h2>5. Your Rights and Choices</h2>
@@ -261,7 +307,7 @@
             <li>Create a registered account at any time</li>
             <li>Use guest mode without registration</li>
             <li>Switch between guest and registered accounts</li>
-            <li>Delete your account and all associated data</li>
+            <li>Delete your account and all associated data directly from within the app</li>
         </ul>
         
         <h3>5.2 Data Control</h3>
@@ -273,35 +319,109 @@
             <li>Request deletion of your personal data</li>
         </ul>
         
-        <h2>6. Children's Privacy</h2>
-        <p>The App is suitable for all ages and focuses on Islamic education. For children under 13, we recommend using guest mode or parental supervision when creating registered accounts.</p>
+        <h2>6. Account Deletion and Data Removal</h2>
         
-        <h2>7. Data Retention</h2>
-        <p>We retain your personal data only for as long as necessary:</p>
+        <h3>6.1 How to Delete Your Account</h3>
+        <p>You can permanently delete your account and all associated data <strong>directly from within the app</strong> by following these steps:</p>
+        <ol>
+            <li>Open the Mishkat Al-Hoda app on your device</li>
+            <li>Navigate to <strong>Settings</strong> (usually represented by a gear icon)</li>
+            <li>Select <strong>Account Settings</strong> or <strong>Profile</strong></li>
+            <li>Tap on <strong>"Delete Account"</strong> button</li>
+            <li>Read the warning message carefully</li>
+            <li>Enter your password for verification (if applicable)</li>
+            <li>Confirm your decision to permanently delete the account</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>Important:</strong> Account deletion is permanent and irreversible. Once deleted, your data cannot be recovered. If you have an active subscription, deleting your account will cancel it immediately.
+        </div>
+        
+        <h3>6.2 What Happens When You Delete Your Account</h3>
+        <p>When you delete your account through the app:</p>
         <ul>
-            <li><strong>Registered accounts:</strong> Data is retained until account deletion</li>
-            <li><strong>Guest mode:</strong> Data is retained on device until app uninstallation or data clearance</li>
-            <li><strong>Inactive accounts:</strong> Accounts inactive for 2 years may be deleted</li>
+            <li>All personal data is permanently deleted from our servers</li>
+            <li>Your progress data (Quran reading, prayer tracking) is removed</li>
+            <li>Your account preferences and settings are erased</li>
+            <li>Any active subscriptions are automatically cancelled</li>
+            <li>You will not be charged for any future billing cycles</li>
+            <li>No refunds will be issued for the current billing period</li>
+            <li>You will be immediately logged out of the app</li>
+            <li>All app data associated with your account is removed</li>
         </ul>
         
-        <h2>8. Policy Updates</h2>
+        <h3>6.3 Subscription Cancellation Policy</h3>
+        <p>If you have an active subscription:</p>
+        <ul>
+            <li><strong>Automatic Cancellation:</strong> Deleting your account through the app automatically cancels any active subscription</li>
+            <li><strong>Separate Cancellation:</strong> If you only want to cancel subscription without deleting account:
+                <ul style="margin-left: 20px; margin-top: 5px;">
+                    <li>For iOS users: Cancel through App Store settings</li>
+                    <li>For Android users: Cancel through Google Play Store</li>
+                    <li>Or use the in-app subscription management section</li>
+                </ul>
+            </li>
+            <li><strong>Refund Policy:</strong> No refunds are provided for the current billing period after cancellation</li>
+            <li><strong>Access Duration:</strong> You retain access to premium features until the end of the current billing period</li>
+        </ul>
+        
+        <h3>6.4 Data Retention After Deletion</h3>
+        <p>After account deletion:</p>
+        <ul>
+            <li>All personal data is removed from our active databases within 24 hours</li>
+            <li>Complete deletion from backup systems occurs within 30 days</li>
+            <li>Anonymous, aggregated data may be retained for analytics purposes</li>
+            <li>Legal/regulatory required data may be retained as necessary by law</li>
+            <li>Subscription billing records are retained as required by financial regulations</li>
+        </ul>
+        
+        <h3>6.5 Contact for Deletion Issues</h3>
+        <p>If you encounter any issues while trying to delete your account through the app, please contact us at:</p>
+        <p style="text-align: center; font-weight: bold;">waleedd2369@gmail.com</p>
+        <p>Include "Account Deletion Support" in the subject line and provide your registered email address for assistance.</p>
+        
+        <h2>7. Children's Privacy</h2>
+        <p>The App is suitable for all ages and focuses on Islamic education. For children under 13, we recommend using guest mode or parental supervision when creating registered accounts.</p>
+        
+        <h2>8. Data Retention</h2>
+        <p>We retain your personal data only for as long as necessary:</p>
+        <ul>
+            <li><strong>Registered accounts:</strong> Data is retained until account deletion is requested through the app</li>
+            <li><strong>Guest mode:</strong> Data is retained on device until app uninstallation or data clearance</li>
+            <li><strong>Inactive accounts:</strong> Accounts inactive for 2 years may be deleted after email notification</li>
+            <li><strong>Subscription data:</strong> Billing information is retained as required by law (typically 7 years)</li>
+        </ul>
+        
+        <h2>9. Policy Updates</h2>
         <p>We may update this Privacy Policy to reflect changes in our practices. We will notify registered users of any material changes via email or app notification. The "Last updated" date at the top indicates when this policy was last revised.</p>
         
-        <h2>9. Compliance</h2>
+        <h2>10. Compliance</h2>
         <p>This Privacy Policy is designed to comply with:</p>
         <ul>
+            <li>Apple App Store Guidelines and Requirements</li>
             <li>Google Play Store requirements</li>
             <li>General Data Protection Regulation (GDPR)</li>
             <li>California Consumer Privacy Act (CCPA)</li>
             <li>Industry best practices for mobile apps</li>
         </ul>
+        
+        <h2>11. Contact Information</h2>
+        <p>For privacy-related inquiries or questions about this policy:</p>
+        <ul>
+            <li><strong>Email:</strong> waleedd2369@gmail.com</li>
+            <li><strong>Response Time:</strong> We aim to respond within 48 hours</li>
+            <li><strong>Primary Contact:</strong> For account deletion, please use the in-app deletion feature</li>
+            <li><strong>Support Contact:</strong> Use email only for technical issues with account deletion</li>
+        </ul>
     </div>
     
     <div class="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or your data, please contact us:</p>
+        <p>For general inquiries or technical support:</p>
         <a href="mailto:waleedd2369@gmail.com" class="email">waleedd2369@gmail.com</a>
-        <p style="margin-top: 20px; opacity: 0.9;">We aim to respond to all inquiries within 48 hours.</p>
+        <p style="margin-top: 20px; opacity: 0.9;">
+            <strong>Note:</strong> For account deletion, please use the "Delete Account" feature within the app settings.
+        </p>
     </div>
     
     <div class="footer">
